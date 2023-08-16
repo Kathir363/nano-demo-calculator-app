@@ -15,6 +15,7 @@ def add():
     second = data.get('second', 0)
     result = first + second
     response = {'result': result}
+    #from return
     return jsonify(response), 200  # Return JSON response with result and status code 200
 
 @app.route("/calculator/subtract", methods=['POST'])
