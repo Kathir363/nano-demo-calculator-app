@@ -23,6 +23,7 @@ class MathController {
         return HttpResponse.ok("""{"result": ${numbers.first + numbers.second} }""")
     }
 
+    
     @Post("/subtract", produces = [MediaType.APPLICATION_JSON])
     fun subtract(@Body @NotNull numbers: Numbers): HttpResponse<String> {
         return HttpResponse.ok("""{"result": ${numbers.first - numbers.second} }""")
